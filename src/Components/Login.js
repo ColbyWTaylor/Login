@@ -5,7 +5,7 @@ function Login() {
     <p>UltraSecret Passphrase:</p><input />
     <br />
     <button>Login, Bucko</button>
-    <h3\>Register Instead?</h3>
+    <h3>Register Instead?</h3>
     </>)
 }
 
