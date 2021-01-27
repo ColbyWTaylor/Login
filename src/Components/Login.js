@@ -9,7 +9,7 @@ function Login() {
   const [registeredUser, setRegisteredUser] = useState(false);
 
   return (
-    <>
+    <div className="sectionOutline">
       {registeredUser && <h1>Login</h1>}
       {!registeredUser && <h1>Register</h1>}
       <p onClick={() => setRegisteredUser(!registeredUser)}>
@@ -22,7 +22,7 @@ function Login() {
       <br />
       <br />
       <button onClick={submit}>Submit</button>
-    </>
+    </div>
   );
 }
 
