@@ -19,27 +19,27 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/link2">Link 2</Link>
+              <Link to="/link2">Login</Link>
             </li>
             <li>
-              <Link to="/link3">Link 3</Link>
+              <Link to="/link3">Content</Link>
             </li>
           </ul>
           <UserInfo />
         </nav>
         <Switch>
           <Route exact path="/">
-            <p>here is home</p>
+            <p>Home</p>
+            You should <Link to="/link2">log in</Link>.
           </Route>
           <Route path="/link2">
-            <p>page 1</p>
+            <p>Login</p>
+            <Login />
           </Route>
           <Route path="/link3">
-            <p>page2</p>
+            <p>Content</p>
           </Route>
         </Switch>
-
-        <Login />
       </div>
     </Router>
   );
